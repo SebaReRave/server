@@ -6,11 +6,11 @@ const cors = require('cors');
 
 const app = express();
 
-
 app.use(cors());
 
+mongoose.connect('mongodb://heroku_hgnrhhcx:74pic5fo78ftj0nvcaocjpv2dq@ds253831.mlab.com:53831/heroku_hgnrhhcx',
+{ useNewUrlParser: true })
 
-mongoose.connect('mongodb://seba:bem4dmuch@ds247121.mlab.com:47121/seba_jsa', { useNewUrlParser: true })
 mongoose.connection.once('open', () => {
     console.log('Mit Datenbank verbunden');
 });
