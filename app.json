@@ -1,7 +1,0 @@
-{
-  "name": "Start on Heroku: app.js",
-  "description": "",
-  "repository": "https://github.com/SebaReRave/server",
-  "keywords": ["node", "express", "heroku"],
-  "image": ""
-}
